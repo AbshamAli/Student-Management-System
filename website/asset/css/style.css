@@ -1,0 +1,690 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* nav bar styling*/
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(244, 244, 244, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 5px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+header a .img_logo {
+  width: 70px;
+}
+
+header .nav_bar ul li {
+  list-style: none;
+  position: relative;
+  float: left;
+}
+
+header .nav_bar ul li a {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 30px;
+  display: block;
+}
+
+/* dropdown_courses start*/
+.dropdown_courses ul li {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  line-height: 35px;
+  background-color: white;
+  border-bottom: 1px solid rgb(240, 240, 240, 1);
+}
+
+.dropdown_courses {
+  position: absolute;
+  top: 102%;
+  width: 180px;
+}
+
+header .nav_bar ul li div.dropdown_courses ul {
+  display: none;
+}
+
+header .nav_bar ul li:hover div.dropdown_courses ul {
+  display: block;
+}
+
+.dropdown_courses ul li a {
+  border-bottom: 0.5px solid rgb(240, 240, 240, 1);
+  border-radius: 0.5px;
+  float: left;
+  width: 100%;
+}
+
+.dropdown_courses ul li {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  line-height: 40px;
+  background-color: white;
+}
+
+.dropdown_courses ul li a:hover {
+  background-color: #181D31;
+  color: white;
+}
+
+.courses_1 {
+  padding-left: 20px;
+}
+
+/* dropdown_courses end*/
+/* dropdown_events start*/
+.dropdown_events {
+  position: absolute;
+  top: 103%;
+  width: 140px;
+}
+
+.events_1 {
+  position: absolute;
+  top: 102%;
+  width: 170px;
+}
+
+.dropdown_events ul li {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  line-height: 35px;
+  background-color: white;
+  border-bottom: 1px solid rgb(240, 240, 240, 1);
+}
+
+.a {
+  position: absolute;
+  left: 30px;
+  top: 110%;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+header .nav_bar ul li div.dropdown_events ul {
+  display: none;
+}
+
+header .nav_bar ul li:hover div.dropdown_events ul {
+  display: block;
+}
+
+.dropdown_events ul li a {
+  border-bottom: 0.5px solid rgb(240, 240, 240, 1);
+  border-radius: 0.5px;
+  float: left;
+  width: 100%;
+}
+
+.dropdown_events ul li {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  line-height: 40px;
+  background-color: white;
+}
+
+.dropdown_events ul li a:hover {
+  background-color: #181D31;
+  color: white;
+}
+
+/* dropdown_events end*/
+/*  FOOTER  */
+
+footer{
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer-distributed {
+  background-color: #181D31;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: justify;
+  font: bold 16px 'Poppins';
+  padding: 25px 50px 60px 50px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 80px;
+
+}
+
+.footer-left, .footer-right, .footer-center {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-links {
+  color: white;
+  margin: 20px 0 12px;
+}
+
+.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-company-name {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-left {
+  width: 35%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.footer-center {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-right {
+  width: 28%;
+  text-align: justify;
+}
+
+.footer-center i {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-center p {
+  display: block;
+  color: white;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-center a {
+  color: white;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+.footer-company-about {
+  line-height: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-company-about span {
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.footer_icons {
+  margin-top: 25px;
+}
+
+.footer_icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer_icons a:hover {
+  background-color: red;
+}
+
+.footer-company-name {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+.container-fluid {
+  position: inherit;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-right: 45px;
+  padding-bottom: 50px;
+  font-size: 16px;
+
+}
+
+/*  Mission & Vision Div*/
+
+.mission_div{
+margin-top: 80px;
+text-align: center;
+
+}
+
+
+.vision-div {
+
+  display: inline-flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: justify;
+}
+
+.vision-div .icon-{
+  width: 72px;
+  height: 72px;
+  background: #f3f8fa;
+  border-radius: 8px;
+  margin-right:20px;
+
+}
+
+.vision-div .icon- a {
+  text-align: center;
+  display:inline-block;
+  margin:18px 18px 18px 18px;
+}
+
+.vision-div .icon- a i {
+  vertical-align: middle;
+  padding:8px 8px 8px 8px;
+}
+
+.vision-div p {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+  padding-right: 25px;
+
+}
+
+.vision-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Certified Programs */
+
+.owl-pagination {
+  margin-top:30px;
+}
+
+.certified_program {
+
+  margin-top: 80px;
+  text-align: center;
+  background-color: #f8f9fa;
+
+}
+  /* owl carousel */
+.pencil_card{
+  background-color: white;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+
+}
+
+.pencil_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.pencil_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* guitar */
+
+.guitar_card{
+  background-color: white;
+
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+  margin-left: 50px;
+
+
+}
+
+
+.guitar_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.guitar_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* camera card */
+.camera_card{
+  background-color: white;
+
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+margin-left: 50px;
+
+
+}
+
+
+
+.camera_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.camera_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Potrait Card */
+
+.potrait_card{
+  background-color: white;
+
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+margin-left: 50px;
+
+
+}
+
+.potrait_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.potrait_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* textile & fashion card */
+
+.textile_card{
+  background-color: white;
+
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+  margin-left: 50px;
+
+
+}
+
+.textile_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.textile_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* painting card */
+
+.painting_card{
+  background-color: white;
+
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+  margin-left: 50px;
+
+
+}
+
+.painting_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.painting_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* sculpture*/
+
+
+.sculpture_card{
+  background-color: white;
+
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 26px 0 rgb(68 88 144 / 14%);
+  margin-left: 50px;
+
+
+}
+
+.sculpture_card h6{
+  color: black;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.sculpture_card a{
+  color: #4fa6d5;
+  font-family: 'Nunito';
+  font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* Alert & Updates */
+
+.alerts {
+  margin-top: 60px;
+  text-align: center;
+  background-color: #f8f9fa;
+
+}
+
+.brochures{
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+}
+.Photography_alert{
+
+  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 100px;
+}
+
+.jamming_alert{
+
+  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 100px;
+}
+
+.women_alert{
+
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* People */
+
+.mission_div{
+margin-top: 80px;
+text-align: center;
+
+}
+
+
+.vision-div {
+
+  display: inline-flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: justify;
+}
+
+.vision-div .icon-{
+  width: 72px;
+  height: 72px;
+  background: #f3f8fa;
+  border-radius: 8px;
+  margin-right:20px;
+
+}
+
+.vision-div .icon- a {
+  text-align: center;
+  display:inline-block;
+  margin:18px 18px 18px 18px;
+}
+
+.vision-div .icon- a i {
+  vertical-align: middle;
+  padding:8px 8px 8px 8px;
+}
+
+.vision-div p {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+  padding-right: 25px;
+
+}
+
+.vision-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* Register button */
+
+.reg_button{
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  background-color:black;
+  color:white;
+border: none;
+
+}
